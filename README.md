@@ -13,6 +13,8 @@ zram，以前称为compcache，是一个Linux内核模块，用于在RAM中创�
 
 本项目中使用的硬件内存单元UPMEM则属于PNM类型近内存计算单元：
 
+![UPMEM DIMM](img/upmem.png)
+
 UPMEM PIM 由数千个创新数据处理器 （DPU） 组成，这些处理器独立安置于DRAM内存芯片内，靠近数据，用于计算数据密集型操作，同时大幅减少片外数据移动。这些DPU受主CPU上运行的高级应用程序的控制，以确保任务编排。
 
 单个UPMEM内存卡可安装于标准的内存插槽中。其上每个内存插条拥有128个可独立运行的RISC DPU核心，每个核心可执行最多24个线程，且单个DPU拥有1GB/s内存读取带宽。
@@ -64,3 +66,5 @@ UPMEM PIM 由数千个创新数据处理器 （DPU） 组成，这些处理器�
 https://wiki.gentoo.org/wiki/Zram
 * zram recompress 
 https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=443dd798062c
+* UPMEM
+https://www.upmem.com/technology/
